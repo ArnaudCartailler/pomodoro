@@ -11,31 +11,39 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
-  <div id="break">
-    <p>break</p>
-    <button class="plus1">+</button>
-    <p id="time1"></p>
-    <button class="minus1">-</button>
-  </div>
+  <div class="container-fluid">
+    <div class="row">
 
-  <div id="reinit">
-    <p>session</p>
-    <button class="plus">+</button>
-    <p id="begin"></p>
-    <button class="minus">-</button>
+    <div class="firstpart col-md-6 d-flex justify-content-center">
+      <p>break</p>
+        <button class="plus1">+</button>
+      <p id="time1"></p>
+        <button class="minus1">-</button>
+    </div>
+
+    <div class="secondpart col-md-6 d-flex justify-content-center">
+      <p>session</p>
+        <button class="plus">+</button>
+      <p id="begin"></p>
+        <button class="minus">-</button>
+    </div>
+
   </div>
-  
-  <div id="session">
-    <button onclick="go()">start</button>
-    <p id="start">GO</p>
-  </div>
+</div>
+
+  <div class="row">
+    <div class="thirdpart offset-md-3 col-md-3 offset-md- d-flex m-auto justify-content-center">
+      <button onclick="go()">start</button>
+      <p id="start">GO</p>
+    </div>
+</div>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

@@ -97,11 +97,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  body{
+    background-color: lightgrey;
+  }
 
 
+  p{
+    font-size: 40px;
+    font-family: serif;
+    color : black;
+  }
 
+  button{
+    border-radius: 10px;
+    font-size: 30px;
+    border : 1px solid white;
+    box-shadow: 1px 2px 2px grey;
+    background-color: white;
+  }
 
-
+button:hover{
+  box-shadow: 1px 5px 5px grey;
+  border : 3px solid grey;
+  transition: 0.3s;
+  background-color: white;
+}
 
 
 

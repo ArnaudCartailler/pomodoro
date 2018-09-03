@@ -15,11 +15,11 @@
     d = setTimeout(go,1000);
  }
 
-var time2 = 5 ;
+var time = "" ;
 $(document).ready(function(){
     $(".plus").on("click", function(){
-        document.getElementById("begin").innerHTML = time2;
-          time2++;
+        document.getElementById("begin").innerHTML = time;
+          time++;
     });
 });
 

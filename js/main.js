@@ -46,9 +46,9 @@ $(document).ready(function(){
     });
 });
 
-//pause
+//pause (not working)
 $(document).ready(function(){
   $("#pause").on("click", function(){
-    $("#begin").stop();
+    clearInterval(time);
   });
 });
